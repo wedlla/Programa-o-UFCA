@@ -1,24 +1,14 @@
-05. Faça um programa que receba dois números e efetue a soma deles. Caso o valor
-somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8; caso
-o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
-
-#include<stdio.h>
-
+//05. Faça um programa que receba alguma medição em metros e imprima a conversão para centímetros.
+#include <stdio.h>
 int main(){
 
-    int n1,n2,soma;
+  float metros, centimetros;
 
-    printf("Digite dois numeros\n");
-    scanf("%d %d", &n1,&n2);
-    soma = n1 + n2;
+  printf("Digite o numeros em metros:\n");
+  scanf("%2.f", &metros);
+  // convertendo para centimetros
+  centimetros = (metros *100);
+  printf("A conversao em centimetros e:%2.f", centimetros);
 
-    if(soma>20){
-        printf("Soma = %d", soma+8);
-    }
-    else
-        {
-        printf("Soma = %d", soma-5);
-    }
-
-    return 0;
+  return 0;
 }

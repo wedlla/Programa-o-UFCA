@@ -1,19 +1,28 @@
-12. Faça um programa que receba um inteiro e imprima se ele se encontra entre 20 e 90
-ou não
-
-#include<stdio.h>
-#include<stdlib.h>
+//12. Faça um programa que receba o número total de eleitores de um município, número de votos brancos, nulos e válidos. Calcule e imprima o percentual que cada um representa em relação ao total de eleitores.
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(){
-    int valor;
-    printf("Digite um numero\n");
-    scanf("%d", &valor);
 
-    if(valor>20&&valor<90){
-        printf("o numero se encontra entre 20 e 90");
-    }
-    else{
-        printf("o numero nao se encontra entre 20 e 90");
-    }
-    return 0;
+  int eleitores, brancos, nulos, validos;
+  float percBrancos, percNulos, percValidos;
+
+  printf("Informe o numero de eleitores:\n");
+  scanf("%d", &eleitores);
+  printf("Informe o numero de votos validos:\n");
+  scanf("%d", &validos);
+  printf("Informe o numero de votos em branco:\n");
+  scanf("%d", &brancos);
+  printf("Informe o numero de votos nulos:\n");
+  scanf("%d", &nulos);
+
+  percValidos = (validos / eleitores) * 100;
+  percBrancos = (brancos / eleitores) * 100;
+  percNulos = (nulos / eleitores) * 100;
+
+  printf("\n\n%6.2f%% de votos validos.", percValidos);
+  printf("\n%6.2f%% de votos em branco.", percBrancos);
+  printf("\n%6.2f%% de votos nulos.", percNulos);
+
+  return 0;
 }

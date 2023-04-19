@@ -1,24 +1,24 @@
-14. Faça um programa que receba um número e imprima sua raiz quadrada, se possível. Caso não seja possível, apresente a mensagem “não é possível“.
-
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+//14. Faça um programa que receba uma quantidade de dias, horas, minutos e segundos. Calcule e imprima o total em segundos.
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 
- float valor,raiz;
- printf("Digite um numero\n");
- scanf("%f", &valor);
- raiz=sqrt(valor);
- if(valor>0){
-    printf("Raiz:%.2f\n", raiz);
- }
- else
-    printf("Nao e possivel nos reais\n");
+int dias, horas, minutos, segundos;
+  float total_em_segundos;
 
-    return 0;
+  printf("Digite os dias:\n");
+  scanf("%d", &dias);
+  printf("Digite as horas:\n");
+  scanf("%d", &horas);
+  printf("Digite os minutos:\n");
+  scanf("%d", &minutos);
+  printf("Digite os segundos:\n");
+  scanf("%d", &segundos);
+
+  total_em_segundos = dias * 24 * 3600 + horas * 3600 + minutos * 60 + segundos;
+
+  print("Convertido em segundos é igual a %.2f", total_em_segundos);
+
+  return 0;
 }
-
-
-
-

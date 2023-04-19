@@ -1,20 +1,13 @@
-03. Faça um programa que receba um número e imprima se ele é par ou ímpar
-
+//03. Faça um programa que receba dois números inteiros e imprima a soma desses dois números.
 #include<stdio.h>
-
 int main(){
 
-int valor;
+  int n1,n2,soma;
 
-printf("Digite um numero\n");
-scanf("%d", &valor);
+  printf("Digite dois numeros inteiros:\n");
+  scanf("%d %d", &n1,&n2);
+  soma = n1 + n2;
+  printf("A soma dos numeros e:%d", soma);
 
-if(valor % 0){
-
-    printf("Numero par", valor);
-}else
-printf("Numero impar");
-
-return 0;
-
+  return 0;
 }

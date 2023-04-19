@@ -1,28 +1,14 @@
-04. Faça um programa que receba um número e imprima se ele é positivo, negativo ou
-nulo (zero).
-
-#include<stdio.h>
-
+//04. Faça um programa que peça 3 notas de avaliações e imprima a média aritmética simples dessas notas.
+#include <stdio.h>
 int main(){
-    float valor;
+float nota1, nota2, nota3, media;
 
-    printf("Digite um numero\n");
-    scanf("%f", &valor);
+  printf("Digite tres notas:\n");
+  scanf("%2.f %2.f %2.f", &nota1 &nota2 &nota3);
 
-    if(valor<0){
-        printf("Numero negativo", valor);
+  media = (nota1 + nota2 + nota3) / 2;
 
-    }
-    else
-        {
-     if(valor>0){
-        printf("Numero positivo", valor);
-     }
-    else{
-        printf("Numero nulo", valor);
-    }
+  printf("A media e:%2.f\n", media);
 
-    }
-
-    return 0;
+  return 0;
 }

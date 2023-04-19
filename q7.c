@@ -1,20 +1,17 @@
-07. Faça um programa que receba um número e imprima a mensagem: “é múltiplo de 3”
-ou “não é múltiplo de 3”.
-
-#include<stdio.h>
-#include<stdlib.h>
+//07. Faça um programa que receba o lado de um quadro, calcule a área de um quadrado e imprima o dobro desta área.
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(){
+float lado, area;
 
-int valor;
-printf("Digite um numero\n");
-scanf("%d", &valor);
+  printf("Digite o lado do quadrado:\n");
+  scanf("%f", &lado);
 
-if(valor%3==0){
-    printf("E multiplo de 3", valor);
+  //Calculo da Área
+  area = lado * lado;
+  printf("O dobro da area e:%.2f", area *2);
 
-}else{
-    printf("Nao e multiplo de 3", valor);
-}
-return 0;
+  return 0;
+
 }

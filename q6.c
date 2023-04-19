@@ -1,23 +1,22 @@
-06. Faça um programa que receba um número. Caso o número seja positivo, imprima sua
-raiz; caso contrário, imprima seu quadrado
+//06. Faça um programa que receba o raio de um círculo, calcule e imprima a área deste círculo.
+#include <stdio.h>
+#include <stdlib.h>
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+int main()
+{
+	// Declaração das variáveis
+	float raio, pi=3.14, area;
 
-int main(){
- float valor,raiz,quadrado;
+	// Entrada de dados
+	printf("Digite o raio do circulo:\n");
+	scanf("%f", &raio);
 
- printf("Digite um numero\n");
- scanf("%f", &valor);
+	// Cálculo da área da circunferência
+	area = pi * raio * raio;
 
- if(valor>0){
+	// Apresentação do resultado
+	printf("AREA = %.2f m2 \n", area);
 
- printf("\nA RAIZ QUADRADA DO NUMERO E:%f",sqrt(valor));
-}else{
-printf("\nO QUADRADO DO NUMERO E:%f",pow(valor,2));
-
- }
-
-    return 0;
+	system("pause");
+	return 0;
 }

@@ -1,18 +1,17 @@
-09. Faça um programa que receba dois inteiros diferentes. Imprima na tela o maior e o
-menor número.
-
-#include<stdio.h>
-#include<stdlib.h>
+//09. FaÃ§a um programa que receba a altura de uma pessoa e imprima seu peso ideal. FÃ³rmula do peso ideal: (72.7 âˆ— altura) - 58.
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(){
-    int a,b;
-    printf("Digite dois numeros\n");
-    scanf("%d %d", &a,&b);
 
- if (a > b){
-    printf("O valor maior e:%d\nO valor menor é %d", a, b);
-    }else{
-         printf("O valor maior e:%d\nO valor menor é %d", b, a);
-    }
-    return 0;
+  float altura, peso_ideal;
+
+  printf("Digite sua altura:\n");
+  scanf("%.2f", &altura);
+
+  peso_ideal = (72.7 * altura) - 58;
+
+  printf("Seu peso ideal e:%.2f", peso_ideal);
+
+  return 0;
 }
